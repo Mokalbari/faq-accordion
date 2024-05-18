@@ -12,3 +12,47 @@
   --fw-semi: 600;
   --fw-bold: 700;
 }
+
+body {
+  font-family: var(--ff-main);
+
+  background: var(--clr-accent-100);
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 15vh 1fr;
+}
+
+.header__background {
+  padding-block: min(15vh, 100px);
+  background: url(./assets/images/background-pattern-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/-1;
+}
+
+main {
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+  border-radius: 0.75rem;
+
+  grid-column: 4/7;
+
+  .faq__container {
+    display: flex;
+    gap: 2rem;
+    margin-block: 1em;
+  }
+
+  @media screen and (max-width: 1350px) {
+    & {
+      width: 50vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: calc(100vw - 40px);
+    }
+  }
+}
