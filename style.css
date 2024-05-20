@@ -36,6 +36,7 @@ main {
   background-color: var(--clr-neutral-100);
   height: fit-content;
   padding: 1rem;
+  margin-bottom: 1rem;
   border-radius: 0.75rem;
 
   grid-column: 4/7;
