@@ -61,7 +61,7 @@ main {
 
   .question__title {
     font-weight: var(--fw-semi);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vh, 2rem);
   }
 
   .question__content {
