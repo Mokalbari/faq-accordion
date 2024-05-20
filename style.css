@@ -33,15 +33,41 @@ body {
 
 main {
   background-color: var(--clr-neutral-100);
-  padding: 2rem;
+  height: fit-content;
+  padding: 1rem;
   border-radius: 0.75rem;
 
   grid-column: 4/7;
+
+  hr {
+    opacity: 0.3;
+  }
 
   .faq__container {
     display: flex;
     gap: 2rem;
     margin-block: 1em;
+  }
+
+  .question__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  article {
+    padding-block: 1rem;
+  }
+
+  .question__title {
+    font-weight: var(--fw-semi);
+    font-size: 1.5rem;
+  }
+
+  .question__content {
+    margin-top: 2em;
+    color: var(--clr-neutral-800);
+    opacity: 0.7;
   }
 
   @media screen and (max-width: 1350px) {
@@ -55,4 +81,8 @@ main {
       width: calc(100vw - 40px);
     }
   }
+}
+
+.hidden {
+  display: none;
 }
