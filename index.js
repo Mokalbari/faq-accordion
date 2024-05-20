@@ -1,9 +1,13 @@
 const toggleFaq = (() => {
-  const toggleIcon = [
+  const toggleElement = [
     "toggleIcon1",
     "toggleIcon2",
     "toggleIcon3",
     "toggleIcon4",
+    "toggleTitle1",
+    "toggleTitle2",
+    "toggleTitle3",
+    "toggleTitle4",
   ];
 
   const mainContent = {
@@ -24,7 +28,7 @@ const toggleFaq = (() => {
 
   mainContent.main.addEventListener("click", (event) => {
     let targetID;
-    toggleIcon.includes(event.target.id)
+    toggleElement.includes(event.target.id)
       ? (targetID = event.target.id)
       : (targetID = "");
     const number = getIconNumber(targetID);
